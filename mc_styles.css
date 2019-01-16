@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/*
+    Stylesheet for Millenium Computers 
+    Author: Connor J Webdale 
+    Date: 1.16.19 
+
+    filename: mc_styles.css
+
+*/
+
+/*HTML and Body styles*/
+
+html {
+    background: rgb(45, 45, 192);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    box-shadow: rgb(90, 90, 90) 20px 0px 40px, rgb(90, 90, 90) -20px 0px 40px;
+    min-height: 100%;
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1020px;
+    width: 100%;
+}
+
+/*Header Styles*/
+header {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+header img {
+    width: 100%;
+}
+
+/*Navigation Styles*/
+nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    font-size: 1.2em;
+    line-height: 2.3em;
+    height: 2.3em;
+    padding: 0px 40px;
+}
+
+header nav ul li a {
+    color: blue;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: rgb(255, 241, 50);
+}
+
+
+a#navicon {
+    display: none;
+}
+
+/*Section Styles*/
+section {
+    margin: 30px 3%;
+}
+
+section h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
+    color: blue;
+    margin-bottom: 35px;
+}
+
+section p {
+    line-height: 1.4em;
+    margin: 15px 0px;
+}
+
+/*Footer styles*/
+footer {
+    color: white;
+}
+
+/*Mobile Styles: to 640px*/
+@media only screen and (max-width: 640px) {
+
+    a#navicon {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul li {
+        font-size: 1em;
+        line-height: 1.3em;
+        height: 1.3em;
+    }
+
+    a#navicon:hover+ul,
+    header nav ul:hover {
+        display: block;
+    }
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: .9em;
+    }
+}
+
+/*Tablet and Desktop styles: more than 640 pixels*/
+@media only screen and (min-width: 641px) {
+    body header nav ul {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    body header nav ul li {
+        -webkit-flex: 0 1 auto;
+        flex: 0 1 auto;
+    }
+}
