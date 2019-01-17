@@ -8,3 +8,83 @@
     filename: mc_forms.css
 
 */
+
+/*Layout*/
+form {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+form>fieldset {
+    background-color: rgba(255, 241, 50, 0.253);
+    border-radius: 25px;
+
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+
+    font-size: .9em;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.row {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    margin: 10px 0px;
+}
+
+div.row>* {
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;
+}
+
+/*Legend*/
+legend {
+    background-color: blue;
+    color: rgb(255, 241, 50);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Text area */
+textarea {
+    height: 50px;
+    width: 95%;
+}
+
+/*Submit/Reset/Contact Buttons*/
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+input[type='submit'],
+input[type='reset'],
+input[type=''] {
+    font-size: 1.3em;
+    padding: 5px;
+    margin: 5px;
+}
+
+/*Focus*/
+input:focus,
+textarea:focus {
+    background-color: rgb(224, 255, 220);
+}
+
+input#zip:focus:valid,
+input#phone:focus:valid {
+    background: rgb(236, 255, 220) url(mc_go.png) bottom right no-repeat;
+}
+
+input#zip:focus:invalid,
+input#phone:focus:invalid {
+    background: rgb(255, 220, 220) url(mc_stop.png) bottom right no-repeat;
+}
