@@ -10,6 +10,7 @@
 */
 
 /*Layout*/
+/*Defines the form element as a flexbox. */
 form {
     display: -webkit-flex;
     display: flex;
@@ -18,6 +19,7 @@ form {
     flex-flow: row wrap;
 }
 
+/*Changes the background color and border radius of each fieldset. Also defines the fieldset's flex values. */
 form>fieldset {
     background-color: rgba(255, 241, 50, 0.253);
     border-radius: 25px;
@@ -30,6 +32,7 @@ form>fieldset {
     margin: 10px;
 }
 
+/*Adds styles to make the div act like a new row. */
 div.row {
     display: -webkit-flex;
     display: flex;
@@ -40,12 +43,14 @@ div.row {
     margin: 10px 0px;
 }
 
+/*Defines the flex value for all elements inside a div. */
 div.row>* {
     -webkit-flex: 1 1 150px;
     flex: 1 1 150px;
 }
 
 /*Legend*/
+/*Changes the appearance of each legend. Changes background color, font color, padding, and border radius. */
 legend {
     background-color: blue;
     color: rgb(255, 241, 50);
@@ -54,36 +59,42 @@ legend {
 }
 
 /*Text area */
+/*increased the size of the text area box. */
 textarea {
     height: 50px;
     width: 95%;
 }
 
 /*Submit/Reset/Contact Buttons*/
+/*Put the 3 buttons in the center of the page. */
 div#buttons {
     text-align: center;
     width: 100%;
 }
 
+/*Increased the font size of the buttons, and added padding/margin. */
 input[type='submit'],
 input[type='reset'],
-input[type=''] {
+input[type='button'] {
     font-size: 1.3em;
     padding: 5px;
     margin: 5px;
 }
 
 /*Focus*/
+/*Changed from every input, to only that in a fieldset. When the submit/cancel button was clicked, it received the focus and those styles applied to it. */
 fieldset input:focus,
 textarea:focus {
     background-color: rgb(224, 255, 220);
 }
 
+/*When the zip or phone number field is selected, and valid, the background will change to green and a picture will display. */
 input#zip:focus:valid,
 input#phone:focus:valid {
     background: rgb(236, 255, 220) url(mc_go.png) bottom right no-repeat;
 }
 
+/*When the zip or phone number field is selected, and invalid, the background will change to red and a picture will display. */
 input#zip:focus:invalid,
 input#phone:focus:invalid {
     background: rgb(255, 220, 220) url(mc_stop.png) bottom right no-repeat;

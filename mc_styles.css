@@ -10,13 +10,14 @@
 */
 
 /*HTML and Body styles*/
-
+/*Changes the background color and font of the entire document. */
 html {
-    background: rgb(45, 45, 192);
+    background-color: rgb(45, 45, 192);
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
 }
 
+/*Changes the background color, adds a box shadow to the left and right sides of the body element, centers the body, and sets a max and min width. */
 body {
     background-color: white;
     box-shadow: rgb(90, 90, 90) 20px 0px 40px, rgb(90, 90, 90) -20px 0px 40px;
@@ -28,20 +29,24 @@ body {
 }
 
 /*Header Styles*/
+/*Removes margin/padding from the bottom of the header element. */
 header {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
+/*Sets the image in the header element to a width of 100%. */
 header img {
     width: 100%;
 }
 
 /*Navigation Styles*/
+/*Removes the disk from unordered lists. */
 ul {
     list-style: none;
 }
 
+/*Changes the font size, line height, and padding of li elements. */
 header nav ul li {
     font-size: 1.2em;
     line-height: 2.3em;
@@ -49,6 +54,7 @@ header nav ul li {
     padding: 0px 40px;
 }
 
+/*Affects anchor tags in list elements. Changes the font color, display type, width, and removes underline. */
 header nav ul li a {
     color: blue;
     display: block;
@@ -56,20 +62,23 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/*Changes the font color when links are hovered. */
 header nav ul li a:hover {
     color: rgb(255, 241, 50);
 }
 
-
+/*Hides the navicon by default. */
 a#navicon {
     display: none;
 }
 
 /*Section Styles*/
+/*Changes the margin of the section element. */
 section {
     margin: 30px 3%;
 }
 
+/*Changes the font family, size, and color of h1 tags in section tags. */
 section h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5em;
@@ -77,47 +86,50 @@ section h1 {
     margin-bottom: 35px;
 }
 
+/*Changes line height and margin of paragraphs nested in section elements. */
 section p {
     line-height: 1.4em;
     margin: 15px 0px;
 }
 
+/*Removes padding and margin of unordered lists in fieldsets. */
 fieldset ul {
     padding: 0px;
     margin: 0px;
 }
 
-/*Footer styles*/
-footer {
-    color: white;
-}
-
 /*Mobile Styles: to 640px*/
 @media only screen and (max-width: 640px) {
 
+    /*Displays the navicon on mobile view to allow responsive design. */
     a#navicon {
         display: block;
     }
 
+    /*Hides the unordered list until the navicon is selected. */
     header nav ul {
         display: none;
     }
 
+    /*Changes the font size, line height, and height of list elements to appear better on mobile. */
     header nav ul li {
         font-size: 1em;
         line-height: 1.3em;
         height: 1.3em;
     }
 
+    /*Displays the unordered list when the navicon is hovered. */
     a#navicon:hover+ul,
     header nav ul:hover {
         display: block;
     }
 
+    /*Changes font size of h1 tags nested in section tags to appear better on mobile. */
     section h1 {
         font-size: 1.5em;
     }
 
+    /*Affects the font size of paragraph tags nested in section tags to better appear on mobile. */
     section p {
         font-size: .9em;
     }
@@ -125,6 +137,8 @@ footer {
 
 /*Tablet and Desktop styles: more than 640 pixels*/
 @media only screen and (min-width: 641px) {
+
+    /*Changes from a 2 column layout to a one column layout when the screen shrinks to a tablet view. */
     body header nav ul {
         display: -webkit-flex;
         display: flex;
