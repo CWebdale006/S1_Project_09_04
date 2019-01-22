@@ -137,28 +137,37 @@
                 </div>
 
                 <div class="row">
-                    <!--Includes option buttons for the DVD burner, tuner card, and media card reader options. -->
-                    <label>Select as many as apply:</label>
+                    <p id="radio">Select yes or no for the following:</p>
+                </div>
 
-                    <fieldset>
-                        <ul>
-                            <li>
-                                <label for="dvd">DVD Burner</label>
-                                <input type="radio" name="dvdBurner" id="dvd" value="yes" />
-                            </li>
-
-                            <li>
-                                <label for="tuner">Tuner Card</label>
-                                <input type="radio" name="tunerCard" id="tuner" value="yes" />
-                            </li>
-
-                            <li>
-                                <label for="mcard">Media Card Reader</label>
-                                <input type="radio" name="mediaCard" id="mcard" value="yes" />
-                            </li>
-                        </ul>
+                <div class="row">
+                    <label for="dvd">DVD Burner</label>
+                    <fieldset class="optgroup">
+                        <label for="dYes">Yes</label>
+                        <input type="radio" name="dvdBurner" id="dYes" value="Yes" />
+                        <label for="dNo">No</label>
+                        <input type="radio" name="dvdBurner" id="dNo" value="No" />
                     </fieldset>
+                </div>
 
+                <div class="row">
+                    <label for="tuner">Tuner Card</label>
+                    <fieldset class="optgroup">
+                        <label for="tYes">Yes</label>
+                        <input type="radio" name="tunerCard" id="tYes" value="Yes" />
+                        <label for="tNo">No</label>
+                        <input type="radio" name="tunerCard" id="tNo" value="No" />
+                    </fieldset>
+                </div>
+
+                <div class="row">
+                    <label for="mcard">Media Card Reader</label>
+                    <fieldset class="optgroup">
+                        <label for="mYes">Yes</label>
+                        <input type="radio" name="mediaCard" id="mYes" value="Yes" />
+                        <label for="mNo">No</label>
+                        <input type="radio" name="mediaCard" id="mNo" value="No" />
+                    </fieldset>
                 </div>
 
                 <div class="row">

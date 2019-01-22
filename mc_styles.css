@@ -98,6 +98,11 @@ fieldset ul {
     margin: 0px;
 }
 
+p#radio {
+    width: 100%;
+    margin-right: 160px;
+}
+
 /*Mobile Styles: to 640px*/
 @media only screen and (max-width: 640px) {
 
