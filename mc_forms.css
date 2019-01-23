@@ -82,7 +82,7 @@ input[type='button'] {
 }
 
 /*Focus*/
-/*Changed from every input, to only that in a fieldset. When the submit/cancel button was clicked, it received the focus and those styles applied to it. */
+/*Highlights input boxes that receive the focus. Changed from every input, to only that in a fieldset. When the submit/cancel button was clicked, it received the focus and those styles applied to it. */
 fieldset input:focus,
 textarea:focus {
     background-color: rgb(224, 255, 220);
